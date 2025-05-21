@@ -1,6 +1,8 @@
 # Customer Churn Analysis
 
-This repository contains analyses of customer churn in two different sectors: Banking and Telecommunications. My main aim was to explore the Churn problem 
+This repository contains analyses of customer churn, for now we tackled two different sectors: Banking and Telecommunications. My main aim was to explore the Churn problem and understand the factors that contribute to customer churn in these industries, and test some crazy ideas I had in mind.
+
+In the process we managed to beat the exiting results in the Banking task, and reach the exiting best result on the Telecom task. More works on other datasets will be added in the future.
 
 ## Projects
 
