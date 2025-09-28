@@ -1,0 +1,42 @@
+{
+  "bank_churn": {
+    "required_columns": [
+      "Age",
+      "IsActiveMember",
+      "Gender",
+      "NumOfProducts",
+      "CreditScore",
+      "Balance",
+      "Geography",
+      "Tenure",
+      "EstimatedSalary"
+    ],
+    "target_column": "Exited",
+    "model_type": "RandomForestClassifier"
+  },
+  "telecom_churn": {
+    "required_columns": [
+      "tenure",
+      "MonthlyCharges",
+      "TotalCharges",
+      "gender",
+      "SeniorCitizen",
+      "Partner",
+      "Dependents",
+      "PhoneService",
+      "MultipleLines",
+      "InternetService",
+      "OnlineSecurity",
+      "OnlineBackup",
+      "DeviceProtection",
+      "TechSupport",
+      "StreamingTV",
+      "StreamingMovies",
+      "Contract",
+      "PaperlessBilling",
+      "PaymentMethod"
+    ],
+    "target_column": "Churn",
+    "model_type": "RandomForestClassifier"
+  }
+}

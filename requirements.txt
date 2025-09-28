@@ -1,0 +1,12 @@
+pandas
+numpy
+scikit-learn
+category-encoders
+xgboost
+fastapi
+uvicorn[standard]
+streamlit
+plotly
+joblib
+python-multipart
+requests
