@@ -113,15 +113,6 @@ The repository is divided into two main projects:
 *   `Banking.csv`: Contains data related to bank customers.
 *   `Telecom.csv`: Contains data related to telecom customers, including demographics, account information, services, and churn status.
 
-## Key Libraries Used (across both projects, inferred from `TelecomChurn.ipynb`)
-
-*   **Data Manipulation**: pandas, numpy
-*   **Data Visualization**: seaborn, matplotlib
-*   **Data Analysis/Utility**: klib
-*   **Machine Learning**:
-    *   scikit-learn (for preprocessing, model selection, metrics, SVM, RandomForestClassifier)
-    *   xgboost (for XGBClassifier)
-    *   category_encoders (for TargetEncoder)
 
 ## How to Use
 
@@ -133,26 +124,6 @@ The repository is divided into two main projects:
 3.  Open the Jupyter Notebook files (`BanckChurn.ipynb`, `TelecomChurn.ipynb`) in a Jupyter environment (e.g., Jupyter Lab, VS Code with Jupyter extension).
 4.  Run the cells in the notebooks to execute the analysis. Make sure the corresponding CSV files (`Banking.csv`, `Telecom.csv`) are in the same directory as the notebooks.
 
-## Repository Structure
-
-```
-.
-├── train_models.py          # Model training script
-├── api.py                   # FastAPI backend
-├── streamlit_app.py         # Streamlit frontend
-├── requirements.txt         # Dependencies
-├── run.bat                  # Windows setup script
-├── test_setup.py           # Setup verification script
-├── models/                  # Trained models (created after training)
-│   ├── bank_churn_model.pkl
-│   ├── telecom_churn_model.pkl
-│   └── model_info.json
-├── Banking.csv             # Bank dataset
-├── Telecom.csv             # Telecom dataset
-├── BanckChurn.ipynb        # Bank analysis notebook
-├── TelecomChurn.ipynb      # Telecom analysis notebook
-└── readme.md               # This file
-```
 
 ## 🎨 Web Interface Features
 
@@ -172,59 +143,7 @@ The repository is divided into two main projects:
 - Interactive pie chart showing churn distribution
 - Responsive design for different screen sizes
 
-## 🛠️ Technical Details
 
-### Machine Learning Pipeline
-1. **Data Preprocessing**: 
-   - Target encoding for categorical variables
-   - Standard scaling for numerical features
-   - Feature engineering (ratios and derived features)
-   - Handling missing values and infinities
-
-2. **Class Imbalance Handling**:
-   - Upsampling minority class during training
-   - Stratified train-test split
-
-3. **Model Training**:
-   - Random Forest Classifier (100 estimators)
-   - Cross-validation for model evaluation
-   - Feature importance analysis
-
-### API Design
-- RESTful API with FastAPI
-- Automatic OpenAPI documentation at `http://localhost:8000/docs`
-- CORS enabled for web interface
-- Error handling and validation
-- File upload support
-
-### Frontend Features
-- Responsive Streamlit interface
-- Real-time API communication
-- Interactive visualizations with Plotly
-- Pagination for large datasets
-- Download functionality
-
-## 🐛 Troubleshooting
-
-### Common Issues
-
-1. **API Not Running**
-   - Make sure to start the API server before launching Streamlit
-   - Check if port 8000 is available
-   - Run: `python test_setup.py` to verify setup
-
-2. **Model Loading Errors**
-   - Ensure models are trained first using `python train_models.py`
-   - Check if CSV files exist in the project directory
-
-3. **Data Validation Errors**
-   - Verify column names match exactly (case-sensitive)
-   - Check data types for numerical columns
-   - Remove or handle missing values
-
-4. **Package Installation Issues**
-   - Use: `pip install -r requirements.txt`
-   - For Windows users, run: `run.bat` for automated setup
 
 ## 📈 Performance
 
@@ -233,7 +152,7 @@ The repository is divided into two main projects:
 - **API Response Time**: < 2 seconds for typical datasets
 - **Frontend**: Real-time updates and responsive interface
 
-## 🎯 Usage Examples
+## Usage Examples
 
 ### Data Format Examples
 
@@ -249,18 +168,6 @@ Age,IsActiveMember,Gender,NumOfProducts,CreditScore,Balance,Geography,Tenure,Est
 gender,SeniorCitizen,Partner,Dependents,tenure,PhoneService,MultipleLines,InternetService,OnlineSecurity,OnlineBackup,DeviceProtection,TechSupport,StreamingTV,StreamingMovies,Contract,PaperlessBilling,PaymentMethod,MonthlyCharges,TotalCharges
 Female,0,Yes,No,1,No,No phone service,DSL,No,Yes,No,No,No,No,Month-to-month,Yes,Electronic check,29.85,29.85
 ```
-
-## 🔗 API Documentation
-
-Once the API is running, visit `http://localhost:8000/docs` for interactive API documentation.
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
 
 ## 📄 License
 
