@@ -2,18 +2,15 @@
 
 A comprehensive machine learning platform for predicting customer churn in Banking and Telecom industries using multiple ML models with a user-friendly Streamlit interface and FastAPI backend.
 
-## 🎯 Features
+## Features
 
 - **Dual Prediction Models**: Bank Customer Churn & Telecom Customer Churn
 - **Interactive Web Interface**: Built with Streamlit for easy data upload and visualization
 - **RESTful API**: FastAPI backend for scalable predictions
 - **Data Validation**: Automatic validation of uploaded data against model requirements
-- **Paginated Results**: Handle large datasets with paginated table views (max 20 rows per page)
-- **Export Functionality**: Download prediction results as CSV
-- **Visual Analytics**: Interactive pie charts for prediction distribution
-- **Real-time Feedback**: Instant validation and prediction results
 
-## 🚀 Quick Start
+
+## Quick Start
 
 ### 1. Install Dependencies
 
@@ -52,7 +49,7 @@ streamlit run streamlit_app.py
 
 The web interface will open in your browser at `http://localhost:8501`
 
-## 📊 Model Requirements
+## Model Requirements
 
 ### Bank Churn Model
 Required columns:
@@ -125,33 +122,6 @@ The repository is divided into two main projects:
 4.  Run the cells in the notebooks to execute the analysis. Make sure the corresponding CSV files (`Banking.csv`, `Telecom.csv`) are in the same directory as the notebooks.
 
 
-## 🎨 Web Interface Features
-
-### Data Upload & Validation
-- Drag-and-drop CSV file upload
-- Real-time data validation
-- Clear error messages for missing columns, data types, and missing values
-- Display of required columns for each model
-
-### Prediction Results
-- Comprehensive summary statistics
-- Paginated table view (20 rows per page)
-- Probability scores for each prediction
-- CSV download functionality
-
-### Visualizations
-- Interactive pie chart showing churn distribution
-- Responsive design for different screen sizes
-
-
-
-## 📈 Performance
-
-- **Bank Model**: ~85% accuracy on test set
-- **Telecom Model**: ~80% accuracy on test set
-- **API Response Time**: < 2 seconds for typical datasets
-- **Frontend**: Real-time updates and responsive interface
-
 ## Usage Examples
 
 ### Data Format Examples
@@ -173,10 +143,4 @@ Female,0,Yes,No,1,No,No phone service,DSL,No,Yes,No,No,No,No,Month-to-month,Yes,
 
 This project is licensed under the MIT License.
 
-## 🆘 Support
-
-For questions or issues:
-1. Check the troubleshooting section
-2. Review the API documentation at `http://localhost:8000/docs`
-3. Run `python test_setup.py` to verify your setup
 4. Open an issue on GitHub
